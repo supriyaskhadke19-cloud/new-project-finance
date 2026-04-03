@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import{ useState} from "react"
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+import Chart from "./components/Chart";
+import Transactions from "./components/Transactions";
+function App(){
+  const [role,setRole]=useState("viewer");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <select onChange={(e) =>setRole(e.target.value)}>
+        <option value="viewer">Viewer</option>
+        <option value="admin">Admin</option>
+      </select>
+      <Dashboard />
+      <Chart />
+      <Transactions role={role} />
     </div>
   );
 }
-
 export default App;
