@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,14 +73,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # new-project-finance
 Frontend project: Finance Dashboard with charts and transactions.
+=======
+>>>>>>> ff99ce790a2b91f941d09422de5bc41a1d0a6359
 # Finance Dashboard
-
 Frontend project: Finance Dashboard with charts and transactions.
-
 ## How to Run
-1. npm install
-2. npm start
-
+npm install
+npm start
 ## Notes
 This project uses mock data and is built for frontend evaluation.
 >>>>>>> 6e21fa53eedce84b6f039e69dbcfdc5495df9a0c
