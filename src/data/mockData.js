@@ -1,4 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type"
+
 
 export const transactions =[
     {id: 1, date: "1-4-2026", amount: 2000,category: "Salary", type:"income"},
